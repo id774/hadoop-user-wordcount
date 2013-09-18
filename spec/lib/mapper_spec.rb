@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
+
+require 'rubygems'
+require 'rspec'
+require 'json'
+
+class Mapper
+  def self.run
+    `cat data/* | ruby lib/mapper.rb`
+  end
+end
+
+describe Mapper do
+  it 'should output the word vector from tweets' do
+    expected = "la_yasushi\t381585192\t月\npirukuru00_\t249012134\t明日,寿司\nFTTH\t15256802\t売春,運営,容疑,警視庁,逮捕,日本経済新聞,http,qIMwB\nmyxa_alt\t617897653\t\nsuraimyu\t164864409\t\ntomy_kaira\t287606751\t普通,選択肢\n215th\t384247201\t\nAVE_VH\t33997115\t夕方,我慢\nWa11abie\t112975633\t鉄砲,弾,仏具,供出,数,十,年,前\ntotobook2\t6544622\tmobamasu,tihiro\ncyanpon\t57265464\tmuseum,HUB,TOKYO,出場,者,必見,涙,素,敵,Bamboo,augment,日本,紹介,映像,http,wBMA\nhirokira\t53420231\t勝利\nisikasa\t9789122\t撃壁,背水,掌,好き\nsiegzeon\t14230492\t\nymotongpoo\t4135891\t今日,布教\nFyar_Fy\t159048962\tayo,mulai,PKL,nha,mulai,bosan\nlluiin\t77944404\tFavorite,Demo,DOC,Mastermind,http,dRhzkim,SoundCloud\n___kgi___\t433967752\thekkun,人人,人人,人人,人人,人人,人\nhinetmania\t5422082\t速報,予想,最大,震度,地震,茨城,県,北部,発生,模様,jishin\nRemopuu\t612406805\t\nakusil\t51706557\t俺\nmin2fly\t14733905\t図書館,university,Let,enjoy,Library,Life,中央,図書館,講習,会,論文,書き方,文献,方,入手,方法,資料,公開,http,xVHR\nasuka\t3593571\tearthquake,速報,日,時,分,茨城,県,北部,推定,推定,地震,発生,震源,推定,http,wnRf,saigai,jishin\nica\t4601071\tajipo,正社員,正社員\nkoemu\t4320871\t\nmeruhera1118\t816534420\t\nsaku93\t106151353\t恋愛,禁止,私,恋愛,成人,社会,人,充,禁止,別,自分\nKhloe_m\t128598479\t拳,王,変換\nakuwa\t4374341\t\nk_noppi\t11041302\tUst,子,www\nnakataku90\t349689033\t地震\nrrrrryo\t71762311\tuuuuuuuuuuuuu\nshiroari_\t381460614\t揺れ\nSoUyarukinai\t17594347\t\naussalove\t243922386\t様,wwwwwwwwww\nhisamura75\t3988281\t\njt_lab\t71432311\t\nmeruhera1118\t816534420\t\nsan_chan104\t166976355\t\nbrainfs\t16180027\tbrainfs,今日,回,http,hute,nekofier\nmosnoopy\t116809226\t\nnyar125\t106358057\tmoe,hearts,拡散,希望,直前,暁,同日,開催,縁結び,神様,屋,台村,LOVE,vol,月,日,祝,屋台,村,横丁,歳,以上,独身,男女,女性,円,男性,円,http\nrice_omori\t14442880\t\nsally_may\t16042322\t\najipo\t16796460\t独立,子\nyano3\t5327132\t大室,櫻子,禁止\ncolspan\t5459952\t\nkwmsaaaaa\t1068457344\t実希\nmukaken\t4336001\t地震\nnopjapan453\t11990972\t夏,陽炎\nComunklam\t51779122\tSyzygy,things,http,jkuChE,vía,sharethis\nMyu_x2\t85549181\t友人,持ち\nqtbrowneyes\t5454612\t\ntoya\t3274831\t\n_popkiller_\t8118142\tlack,化\nbelnadette\t14349224\t\nch1k4hk\t113575182\t不動,地,埼玉\nwhiteball22\t7071642\t地震\nxoj\t6111032\t\nyukki7291\t16061414\tfanta,misaka\ncho45\t3701901\ttagomoris,cho,別\nglpn\t132226732\t以上,渋谷,凛,出,渋谷,凛,渋谷,凛\nmizmanju\t10461752\t\nmmi_79\t284429472\t限界,時半,仮眠\nkarausu\t11098932\t\nnum1\t13480112\tmasa,com,緊急,地震,速報,報,最終,報,詳細,情報,震源,茨城,県,北部,最大,震度,震度,茨城,県,The,Last,Second,表示,地域,名\nmdaisuke\t23722273\t氷川神社,埼玉,人,大宮,見所,NAVER,http,LHZ\nnegiama\t15394570\t地震,時,震源,地,post,当たり前\nyasakani\t6213462\t南,斗,人間,砲弾\najt0g\t98846372\t\nc_box_kotaro\t75344725\t地球,武者震い\nnyonber\t130813410\t回\nonnigmoo\t13658022\t召喚,http,BGzM\ntaiyoroden\t124698310\t\nevil07\t15272646\t年,https,veufdj\nhaleit\t25841465\t\nmin2fly\t14733905\t図書館,江北,図書館,存続,危機,滋賀,地域,YOMIURI,ONLINE,読売新聞,http\nWanazawawww\t40609053\t包帯,男,光,背\naquirax_k\t24518757\t作家,音楽家,画家,岸田,劉生,音楽家\nnununununu\t11572882\tykZQ,切手シート,手元\nymotongpoo\t4135891\t\nD_Rascal774\t302478773\t幼女,胸\namatanoyo\t15675414\t側,機能,Opera\nomi_asakura\t85289635\tDJWILDPARTY,何,系,お昼\nokomania\t95379183\t津波,警報\nzetamatta\t4030371\t最近,NYAOS,的,数,年,開発,者,私,本来,私,流入,全て,方,流出\nexe\t3835881\t名作,喜,国,雅彦,国,樹,由香,名作,正式\nmayPONda\t151637336\tnomisoni,今日,現在,nomisoni,用意,本命,人,義理,人,http\nsanjuusan\t36324553\t億,市場\nschiromisu\t60027750\t少女,面倒,性格,変,気分\nwataryankonyaa\t270437676\thttp,WLB,ARa\nMOOTAAKAA\t113861037\t俺,確認\nmakino0816\t5792402\t様,無茶\nsoranyan\t10765462\toyoide\nwireless_RAN\t552662531\tringonouta,bot,明日,今,月,負け犬,椎名,林檎,ringo\nesoragoto\t22761928\t\nchanmomochan10\t975139939\t宇宙\nkinbara0054\t114456650\tsarasiru,搭載,http,zcrr\nkroner_\t57234814\t\nmenuhin\t94905016\t眠,眠気\n"
+    Mapper.run.should eql expected
+  end
+end
