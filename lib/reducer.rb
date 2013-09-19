@@ -31,7 +31,7 @@ class Reducer
   private
 
   def reducer_output(key, uid, hits)
-    puts "#{key}\t#{uid}\t#{JSON.generate(hits)}\n" unless key.nil?
+    puts "#{key}\t#{uid}\t#{JSON.generate(Hash[hits.sort_by{|k,v|-v}])}\n" unless key.nil?
   end
 end
 
